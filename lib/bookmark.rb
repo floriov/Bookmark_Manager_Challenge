@@ -13,3 +13,17 @@ class Bookmark
     Database.add('bookmark_manager', 'bookmarks', url, title)
   end
 end
+
+#Walkthrough 
+# class Bookmark
+
+#   attr_reader :id, :title, :url
+
+#   def initialize(id:, title:, url:)
+#     @id  = id
+#     @title = title
+#     @url = url
+#   end
+
+#   ### rest of the class ###
+# end
