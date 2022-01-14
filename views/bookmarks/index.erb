@@ -5,9 +5,9 @@
 </form>
 
 <ul>
-  <% @bookmarks.each do |bookmark_hash| %>
+  <% @bookmarks.each do |bookmark| %>
     <li>
-    <%= bookmark_hash[:title] %>: <a href=<%= bookmark_hash[:url]%> target="_blank" ><%= bookmark_hash[:url]%>
+    <%= bookmark.title %>: <a href=<%= bookmark.url %> target="_blank" ><%= bookmark.url %>
     </a>
     </li>  
   <% end %>
