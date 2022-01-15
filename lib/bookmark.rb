@@ -13,8 +13,8 @@ class Bookmark
   end
     
   def self.add(url, title)
-    feedback = Database.add(url, title)
-    Bookmark.new(feedback[0]['id'], feedback[0]['url'], feedback[0]['title'])
+    persisted_data = Database.add(url, title)
+    Bookmark.new(persisted_data[0]['id'], persisted_data[0]['url'], persisted_data[0]['title'])
   end
 
   def self.db_name

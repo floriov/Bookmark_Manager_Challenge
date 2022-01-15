@@ -4,12 +4,12 @@
   <input type='submit' value='Add bookmark'>
 </form>
 
-<ul>
+<ol>
   <% @bookmarks.each do |bookmark| %>
     <li>
-    <%= bookmark.title %>: <a href=<%= bookmark.url %> target="_blank" ><%= bookmark.url %>
-    </a>
+    <h4><%= bookmark.title %></h4>
+    <a href=<%= bookmark.url %> target="_blank" ><%= bookmark.url %></a>
     </li>  
   <% end %>
-</ul>
+</ol>
 
